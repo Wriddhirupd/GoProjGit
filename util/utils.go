@@ -1,4 +1,4 @@
-package main
+package util
 
 import (
 	"encoding/json"
@@ -6,11 +6,9 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
-	// "github.com/mitchellh/mapstructure"
-	// "TestProjGo/models"
 )
 
-func jsonToMap(fileName string) map[string]interface{} {
+func JsonToMap(fileName string) map[string]interface{} {
 	jsonFile, err := os.Open(fileName)
 	if err != nil {
 		fmt.Println(err)
